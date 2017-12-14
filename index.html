@@ -7,18 +7,16 @@
     <title>The Monkees | Celebrating 50 Years of Great Music</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-default">
-
         <!--navbar-->
         <div class="container-fluid">
             <div class="navbar-header">
-                <a href="index.html" class="navbar-brand">
-                    The Monkees
-                </a>
+                <div id="mobile-nav" class="navbar-brand visible-xs active"><a href="index.html">The Monkees</a></div>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -29,17 +27,11 @@
 
             <div class="navbar-collapse collapse" id="navbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="music.html">Music</a></li>
                     <li><a href="video.html">Video</a></li>
                     <li><a href="gigs.html">Gigs</a></li>
                     <li><a href="band.html">Band</a></li>
                 </ul>
-
-                <div class="navbar-header navbar-right hidden-xs">
-                    <a href="gigs.html" class='btn btn-default navbar-btn'>Book Now</a>
-                    <p class="navbar-text"><i>Interested in having The Monkees play your at event?</i></p>
-                </div>
             </div>
         </div>
     </nav>
@@ -49,10 +41,13 @@
         <div class="row">
             <div class="col-xs-12">
                 <section class="callout jumbotron text-center">
-                    <h1>The finest whiskeys delivered to your doorstep.</h1>
-                    <hr class='block-divider block-divider--orange'>
-                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s class="hidden-xs">€19.99</s> <span class="visible-xs"><br></span> <strong><mark>First one is free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn--cta btn--red" data-toggle='modal' data-target='#signUpModal'>Sign Up!</button></p>
+                    <img class=" img-responsive center-block" src="/images/logo.png" />
+                    <p class="lead music-text">Listen to Over 50 Years of Great Music</p>
+                    <p>
+                    <a class="music-service lead">Amazon </a>   
+                    <a class="music-service lead">iTunes </a>   
+                    <a class="music-service lead">Spotify </a>   
+                    </p>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small></p>
                 </section>
             </div>
