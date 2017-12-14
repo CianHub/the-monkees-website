@@ -11,12 +11,15 @@ a {
     color: white;
     text-decoration: none;
     font-family: "Kalligraphia", sans-serif;
+    font-weight: normal;
 }
 
 /* Logo */
 
 .img-responsive {
     margin: 0 auto;
+    padding-top: 15px;
+
 }
 
 /* Containers */
@@ -31,7 +34,7 @@ a {
 .callout-container {
     height: 100vh;
 
-    background: url('../images/bg2.jpg') no-repeat center center fixed;
+    background: url('../images/bg3.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -87,9 +90,6 @@ a {
     background-color: white;
 }
 
-.navbar-default .navbar-nav a {
-    font-weight: bold;
-}
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
@@ -105,13 +105,13 @@ a {
 
 .navbar-default .navbar-nav>li>a {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .navbar-btn {
     border: 0;
     border-radius: 16px;
-    width: 100px;
+    width: 60px;
     background-color: #f05f40;
     color: white;
 }
@@ -122,11 +122,12 @@ a {
     color: white;
 }
 
-#mobile-nav {
+.navbar-header #mobile-nav a {
     font-family: "Kalligraphia", sans-serif;
     font-weight: bold;
     color: white;
     text-decoration: none;
+    font-size: 35px;
 
 }
 
@@ -140,6 +141,7 @@ a {
 
 .jumbotron {
     background-color: transparent;
+
 }
 
 .jumbotron small {
@@ -149,12 +151,13 @@ a {
 }
 
 .lead.music-service {
-    font-size: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-family: "Roboto", sans-serif;
     color: #a7a7a7;
-   
+
+
 }
 
 .lead.music-service:hover {
@@ -164,13 +167,34 @@ a {
 
 .lead.music-text {
     font-style: italic;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 25px 0;
+    font-weight: normal;
+
+}
+
+.lead.social-text {
+    font-style: italic;
     font-family: "Kalligraphia", sans-serif;
     font-size: 35px;
     color: white;
-    margin: 25px 0;
+    text-decoration: underline;
+
 }
 
+.social-icon {
+    font-size: 35px;
+    color: #a7a7a7;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
+.social-icon:hover {
+    color: white;
+    text-decoration: underline;
+}
 
 /* Block dividers */
 
@@ -276,15 +300,14 @@ blockquote.quote {
         text-align: center;
     }
     .navbar-nav>li {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 20px;
         font-family: "Kalligraphia", sans-serif;
         font-size: 40px;
         color: white;
-
-
     }
+
     .navbar {
         background-color: transparent;
 
@@ -293,9 +316,27 @@ blockquote.quote {
     .navbar-default .navbar-nav>li>a {
         color: white;
         transition: text-decoration 0.5s ease-in-out;
+        font-size: 35px;
     }
     .navbar-default .navbar-nav>li>a:hover,
     .navbar-default .navbar-nav>li>a:active {
         text-decoration: underline;
+    }
+    .lead.music-text {
+        font-style: italic;
+        font-family: "Roboto", sans-serif;
+        font-size: 25px;
+        color: white;
+        margin: 25px 0;
+        font-weight: normal;
+
+    }
+    .music-bottom {
+        padding-bottom: 25px;
+
+    }
+    .img-responsive {
+        padding-top: 90px;
+
     }
 }
