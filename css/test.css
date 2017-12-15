@@ -335,10 +335,7 @@ blockquote.quote {
         padding-bottom: 25px;
 
     }
-    .img-responsive {
-        padding-top: 90px;
-
-    }
+    
 }
 /* Music */
 
@@ -353,3 +350,4 @@ blockquote.quote {
 .music .page-header {
     margin-bottom: 25px;
 }
+
