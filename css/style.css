@@ -24,7 +24,6 @@ a {
 
 /* Containers */
 
-.container-wrapper {}
 
 .container-wrapper--red {
     background-color: #f05f40;
@@ -331,8 +330,9 @@ blockquote.quote {
         font-weight: normal;
 
     }
-    .music-bottom {
+    .music-text.music-bottom {
         padding-bottom: 25px;
+        font-size: 20px;
 
     }
     .img-responsive {
@@ -352,4 +352,34 @@ blockquote.quote {
 
 .music .page-header {
     margin-bottom: 25px;
+}
+
+/* Video */
+
+.video-player.lead {
+    text-align: center;
+}
+.video-section.media{
+    margin: 0 auto;
+ 
+}
+
+.video .page-header {
+    margin-bottom: 25px;
+}
+
+.text-title {
+    font-family: "Kalligraphia", sans-serif;
+}
+.page-header .video-title {
+    color: white;
+}
+.video-container{
+    background-image: url("/images/video-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-text {
+    color:white;
 }
