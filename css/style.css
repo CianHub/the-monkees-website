@@ -383,3 +383,7 @@ blockquote.quote {
 .video-text {
     color:white;
 }
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
