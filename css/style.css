@@ -4,14 +4,20 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+
 }
 
 a {
     color: white;
     text-decoration: none;
-    font-family: "Kalligraphia", sans-serif;
-    font-weight: normal;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+a:hover {
+    color: white;
 }
 
 /* Logo */
@@ -23,7 +29,6 @@ a {
 }
 
 /* Containers */
-
 
 .container-wrapper--red {
     background-color: #f05f40;
@@ -38,11 +43,9 @@ a {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
 }
 
@@ -129,7 +132,9 @@ a {
     font-size: 35px;
 
 }
-
+.navbar a {
+    font-family: "Kalligraphia", sans-serif;
+}
 .navbar-brand {
     font-size: 25px;
     padding-top: 18px;
@@ -153,7 +158,8 @@ a {
     font-size: 18px;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     color: #a7a7a7;
 
 
@@ -165,8 +171,8 @@ a {
 }
 
 .lead.music-text {
-    font-style: italic;
-    font-family: "Roboto", sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     font-size: 20px;
     color: white;
     margin: 25px 0;
@@ -175,7 +181,6 @@ a {
 }
 
 .lead.social-text {
-    font-style: italic;
     font-family: "Kalligraphia", sans-serif;
     font-size: 35px;
     color: white;
@@ -323,11 +328,11 @@ blockquote.quote {
     }
     .lead.music-text {
         font-style: italic;
-        font-family: "Roboto", sans-serif;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
         font-size: 25px;
         color: white;
         margin: 25px 0;
-        font-weight: normal;
 
     }
     .music-text.music-bottom {
@@ -339,15 +344,19 @@ blockquote.quote {
         padding-top: 90px;
 
     }
+    
+
 }
+
 /* Music */
 
 .audio-player.lead {
     text-align: center;
 }
-.audio-section.media{
+
+.audio-section.media {
     margin: 0 auto;
- 
+
 }
 
 .music .page-header {
@@ -359,9 +368,10 @@ blockquote.quote {
 .video-player.lead {
     text-align: center;
 }
-.video-section.media{
+
+.video-section.media {
     margin: 0 auto;
- 
+
 }
 
 .video .page-header {
@@ -371,19 +381,96 @@ blockquote.quote {
 .text-title {
     font-family: "Kalligraphia", sans-serif;
 }
+
 .page-header .video-title {
     color: white;
 }
-.video-container{
+
+.video-container {
     background-image: url("/images/video-header.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .video-text {
-    color:white;
+    color: white;
 }
+
 video {
-  width: 100%    !important;
-  height: auto   !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Gigs */
+
+.gigs-section.media {
+    margin: 0 auto;
+
+}
+
+.gigs .page-header {
+    margin-bottom: 25px;
+}
+
+.page-header .gigs-title {
+    color: white;
+}
+
+.gigs-container {
+    background-image: url("/images/live.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.gigs-text {
+    color: white;
+}
+
+
+
+body table {
+
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+td {
+    position: relative;
+    padding: 5px 10px;
+
+}
+
+tr.strikeout td:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.dead-link {
+    color: white;
+    text-decoration: none;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+
+}
+
+.social-container{
+    background-color: #d52733;
+}
+.social-title {
+    color: white;
+    font-weight: 300;
+    
 }
