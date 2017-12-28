@@ -1,3 +1,5 @@
+/*........................................................... General */
+
 @font-face {
     font-family: "Kalligraphia";
     src: url("/fonts/Kalligraphia-D-OT_25803.ttf");
@@ -6,6 +8,7 @@
 body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
+
 
 }
 
@@ -20,7 +23,7 @@ a:hover {
     color: white;
 }
 
-/* Logo */
+/*............................................................  Logo */
 
 .img-responsive {
     margin: 0 auto;
@@ -28,7 +31,11 @@ a:hover {
 
 }
 
-/* Containers */
+/*............................................................  Containers */
+
+.social-container {
+    background-color: #d52733;
+}
 
 .container-wrapper--red {
     background-color: #f05f40;
@@ -37,7 +44,6 @@ a:hover {
 
 .callout-container {
     height: 100vh;
-
     background: url('../images/bg3.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -63,7 +69,7 @@ a:hover {
     padding-bottom: 75px;
 }
 
-/* Navbar */
+/*............................................................  Navbar */
 
 .navbar {
     margin-bottom: 0;
@@ -132,19 +138,22 @@ a:hover {
     font-size: 35px;
 
 }
+
 .navbar a {
     font-family: "Kalligraphia", sans-serif;
 }
+
 .navbar-brand {
     font-size: 25px;
     padding-top: 18px;
 
 }
 
-/* Jumbotron */
+/*............................................................  Jumbotron */
 
 .jumbotron {
     background-color: transparent;
+    margin-bottom: 0;
 
 }
 
@@ -165,6 +174,7 @@ a:hover {
 
 }
 
+
 .lead.music-service:hover {
     color: white;
     text-decoration: underline;
@@ -180,27 +190,8 @@ a:hover {
 
 }
 
-.lead.social-text {
-    font-family: "Kalligraphia", sans-serif;
-    font-size: 35px;
-    color: white;
-    text-decoration: underline;
 
-}
-
-.social-icon {
-    font-size: 35px;
-    color: #a7a7a7;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.social-icon:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-/* Block dividers */
+/*............................................................  Block dividers */
 
 .block-divider {
     width: 75px;
@@ -209,9 +200,6 @@ a:hover {
     background-color: #444;
 }
 
-.block-divider--orange {
-    background-color: #f05f40;
-}
 
 .block-divider--white {
     background-color: white;
@@ -221,7 +209,7 @@ a:hover {
     width: 35px;
 }
 
-/* Buttons */
+/*............................................................  Buttons */
 
 .btn--cta {
     font-weight: bold;
@@ -244,10 +232,7 @@ a:hover {
     color: white;
 }
 
-
-
-
-/* Page Headers */
+/* ............................................................ Page Headers */
 
 .page-header {
     margin-bottom: 0;
@@ -259,39 +244,31 @@ a:hover {
     margin-top: 0;
 }
 
-/* Quotes */
-
-.quotes .page-header {
+.band .page-header {
     margin-bottom: 25px;
 }
 
-blockquote.quote {
-    border-left: 0;
+.music .page-header {
+    margin-bottom: 25px;
 }
 
-/* Features */
-
-.feature {
-    text-align: center;
-    margin-bottom: 40px;
+.video .page-header {
+    margin-bottom: 25px;
 }
 
-.feature .glyphicon {
-    display: block;
-    margin-bottom: 20px;
-    font-size: 45px;
-    line-height: 45px;
+.page-header .video-title {
+    color: white;
 }
 
-.feature .btn {
-    background-color: white;
-    border-color: white;
-    border-radius: 15px;
-    min-width: 100px;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #f05f40;
+.gigs .page-header {
+    margin-bottom: 25px;
 }
+
+.page-header .gigs-title {
+    color: white;
+}
+
+/*......................................................... Media Queries */
 
 @media (min-width: 768px) {
     .navbar .navbar-nav {
@@ -344,11 +321,14 @@ blockquote.quote {
         padding-top: 90px;
 
     }
-    
+
+
+
+
 
 }
 
-/* Music */
+/*............................................................  Music */
 
 .audio-player.lead {
     text-align: center;
@@ -359,31 +339,12 @@ blockquote.quote {
 
 }
 
-.music .page-header {
-    margin-bottom: 25px;
-}
 
-/* Video */
 
-.video-player.lead {
-    text-align: center;
-}
-
-.video-section.media {
-    margin: 0 auto;
-
-}
-
-.video .page-header {
-    margin-bottom: 25px;
-}
+/*............................................................ Video */
 
 .text-title {
     font-family: "Kalligraphia", sans-serif;
-}
-
-.page-header .video-title {
-    color: white;
 }
 
 .video-container {
@@ -397,23 +358,15 @@ blockquote.quote {
 }
 
 video {
-    width: 100% !important;
+    width: 100%;
     height: auto !important;
 }
 
-/* Gigs */
+/*............................................................  Gigs */
 
 .gigs-section.media {
     margin: 0 auto;
 
-}
-
-.gigs .page-header {
-    margin-bottom: 25px;
-}
-
-.page-header .gigs-title {
-    color: white;
 }
 
 .gigs-container {
@@ -423,15 +376,15 @@ video {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    width: 100%;
     position: relative;
+    background-position: center;
+
 }
 
 .gigs-text {
     color: white;
 }
-
-
 
 body table {
 
@@ -440,6 +393,7 @@ body table {
 
 table {
     border-collapse: collapse;
+    border: none;
 
 }
 
@@ -453,9 +407,8 @@ tr.strikeout td:before {
     content: " ";
     position: absolute;
     top: 50%;
-    left: 0;
     border-bottom: 1px solid white;
-    width: 100%;
+    width: 150%; /* joins strike-through bar sections together */
 }
 
 .dead-link {
@@ -466,11 +419,34 @@ tr.strikeout td:before {
 
 }
 
-.social-container{
-    background-color: #d52733;
-}
+/*............................................................ Social*/
+
+
 .social-title {
     color: white;
     font-weight: 300;
+
+}
+
+.lead.social-text {
+    font-family: "Kalligraphia", sans-serif;
+    font-size: 35px;
+    color: white;
+    text-decoration: underline;
+
+}
+
+/*............................................................ Band */
+
+blockquote.quote {
+    border-left: 0;
+}
+
+.media-body{
+    padding-bottom: 25px;
     
+} 
+
+.media-body p{
+    font-size: 14px;
 }
