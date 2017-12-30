@@ -34,7 +34,9 @@ a:hover {
 /*............................................................  Containers */
 
 .social-container {
-    background-color: #d52733;
+    background-color: white;
+   
+    
 }
 
 .container-wrapper--red {
@@ -69,6 +71,16 @@ a:hover {
     padding-bottom: 75px;
 }
 
+.video-container {
+     background-image:url("/images/video-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+
+    
+  
+    
+}
 /*............................................................  Navbar */
 
 .navbar {
@@ -204,6 +216,9 @@ a:hover {
 .block-divider--white {
     background-color: white;
 }
+.block-divider--black {
+    background-color: black;
+}
 
 .block-divider--short {
     width: 35px;
@@ -267,6 +282,7 @@ a:hover {
 .page-header .gigs-title {
     color: white;
 }
+
 
 /*......................................................... Media Queries */
 
@@ -347,11 +363,7 @@ a:hover {
     font-family: "Kalligraphia", sans-serif;
 }
 
-.video-container {
-    background-image: url("/images/video-header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .video-text {
     color: white;
@@ -423,7 +435,7 @@ tr.strikeout td:before {
 
 
 .social-title {
-    color: white;
+    color: black;
     font-weight: 300;
 
 }
@@ -436,6 +448,39 @@ tr.strikeout td:before {
 
 }
 
+.social-list{
+    font-size: 45px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.social-list li {
+  display: inline-block;
+  margin: 0 10px;
+
+}
+
+.fa {
+    color:black;
+}
+#signup.contact-form{
+    display: block;
+    font-size: 14px;
+    margin-top:0em;
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    padding-top: 25px;
+}
+
+#back {
+    color:black;
+    text-decoration: underline;
+    
+}
 /*............................................................ Band */
 
 blockquote.quote {
