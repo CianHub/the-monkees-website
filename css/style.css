@@ -206,7 +206,10 @@ a:hover {
     /* removes border from expanded menu button in mobile version of navbar */
 }
 
-.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:hover
+.navbar-default .navbar-toggle:visited
+.navbar-default .navbar-toggle:active
+.navbar-default .navbar-toggle:focus{
     background-color: transparent;
 
     /* When expand menu button (mobile only)is selected its background colors remains transparent */
