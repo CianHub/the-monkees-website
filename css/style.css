@@ -351,10 +351,14 @@ tr.strikeout td:before {
 }
 
 video {
-    width: 100%;
     height: auto !important;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block
 
-    /* makes video responsive */
+/* makes video centered and responsive */
+
 }
 
 
@@ -471,6 +475,11 @@ video {
         padding-top: 90px;
 
         /* controls monkees logo img size */
+    }
+
+    video {
+        width: 60%;
+        
     }
 
 }
