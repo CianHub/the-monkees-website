@@ -27,9 +27,12 @@ a:hover {
 
 /*............................................................  Logo */
 
-.img-responsive {
+.img-logo {
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 30px;
+    display: block;
+    max-width: 100%;
+    height: auto;
 
     /* alterations to the bootstrap class img-responsive*/
 }
@@ -37,6 +40,17 @@ a:hover {
 /*............................................................  Containers */
 
 .opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    /* base code from whiskey drop module, altered to fit project*/
+}
+
+.gig-opaque-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -55,16 +69,18 @@ a:hover {
 
 .callout-container {
     height: 100vh;
-    background: url('../images/bg3.jpg') no-repeat center center fixed;
+
+    background-image: url('../images/collage.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    display: flex;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     align-items: center;
-    justify-content: center;
+    width: 100%;
     position: relative;
-
     /* base code from whiskey drop module, altered to fit project*/
 }
 
@@ -78,20 +94,37 @@ a:hover {
 
 .gigs-container {
     background-image: url("../images/live.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    width: 100%;
+    background-size: cover;
+    height: 100%;
     position: relative;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 
     /* background image settings */
 }
 
 .social-container {
     background-color: white;
+    /* background color setting */
+}
+
+.gallery-container {
+    background-image: url("../images/monkees.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     /* background color setting */
 }
 
@@ -120,9 +153,12 @@ a:hover {
     font-weight: bold;
     border-radius: 23px;
     width: 160px;
+    background-color: #31b0d5;
+    color: white;
 
     /* extra styles added to bootstrap button class */
 }
+
 
 /* ............................................................ Page Headers */
 
@@ -185,31 +221,35 @@ a:hover {
     /* basic font settings */
 }
 
+/*............................................................  Section Text */
+
+.section-text p {
+    text-align: center;
+}
+
 /*............................................................  Navbar Section */
 
 .navbar {
     margin-bottom: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 1);
     border: 0;
 
     /* alterations made to Bootstraps navbar class for project specific navbar set up */
 }
 
 .navbar-default .navbar-collapse {
-    border-color: transparent;
+    border-color: black;
+    width: 100%;
 
     /* removes border from expanded menu button in mobile version of navbar */
 }
 
-.navbar-default .navbar-toggle:hover
-.navbar-default .navbar-toggle:visited
-.navbar-default .navbar-toggle:active
-.navbar-default .navbar-toggle:focus{
+.navbar-default .navbar-toggle:hover .navbar-default .navbar-toggle:visited .navbar-default .navbar-toggle:active .navbar-default .navbar-toggle:focus {
     background-color: transparent;
 
     /* When expand menu button (mobile only)is selected its background colors remains transparent */
@@ -248,6 +288,10 @@ a:hover {
     /*alterations made to Bootstraps navbar-brand class for project specific navbar set up on mobile */
 }
 
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
 /*............................................................  Jumbotron Section */
 
 .jumbotron {
@@ -263,7 +307,7 @@ a:hover {
     padding-right: 10px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
-    color: #a7a7a7;
+    color: white;
 
     /* font settings for the music service links in jumbotron */
 }
@@ -285,6 +329,7 @@ a:hover {
 
     /* settings for the new album details in jumbotron */
 }
+
 
 /*............................................................ Band Section */
 
@@ -359,9 +404,7 @@ video {
     margin-left: auto;
     margin-right: auto;
     display: block
-
-/* makes video centered and responsive */
-
+    /* makes video centered and responsive */
 }
 
 
@@ -419,6 +462,10 @@ video {
     /* styles back to top link */
 }
 
+input .email-box {
+    border-color: black;
+}
+
 /*......................................................... Media Queries */
 
 @media (min-width: 768px) {
@@ -438,13 +485,13 @@ video {
     .navbar-nav>li {
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 20px;
+        padding-top: 10px;
 
         /* styles navbar items spacing*/
     }
 
     .navbar {
-        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.);
 
         /* removes background color */
     }
@@ -481,7 +528,58 @@ video {
 
     video {
         width: 60%;
-        
+
     }
 
+    .callout-container {
+        height: 100vh;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        /* base code from whiskey drop module, altered to fit project*/
+    }
+    body {
+        padding-top: 60px;
+    }
+
+}
+
+/* ........................................................ Modal */
+
+.modal {
+    /* To center vertically */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+}
+
+
+
+/*........................................................ Music */
+
+
+.section-text {
+    text-align: center;
+    
+    /* centers text */
+
+}
+
+/*......................................................... Gallery */
+
+.gallery-img {
+    display: block;
+    max-width: 100%;
+    height: 400px !important;
+    
+    /*For uniform sizing */
 }

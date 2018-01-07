@@ -14,3 +14,7 @@ Following the advice from the mentors in the User-Centric Front-End Development 
 
 The final code has been deployed to Github pages as it made the most sense due to the platform being used to store the repository.
 
+Installation
+
+The website can be installed on a local computer by cloning and downloading the repository and opening the index.html file with the appropriate software.
+
