@@ -553,12 +553,14 @@ input .email-box {
 /* ........................................................ Modal */
 
 .modal {
-    /* To center vertically */
+    
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    
+    /* To center vertically */
 
 }
 
