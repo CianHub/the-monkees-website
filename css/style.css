@@ -1,75 +1,50 @@
 /*........................................................... General */
 
 @font-face {
+
+    /* Imports non-google font */
     font-family: "Kalligraphia";
     src: url("../fonts/Kalligraphia-D-OT_25803.ttf");
-    /* Imports non-google font */
+
 }
 
 body {
+
+    /* Basic settings for main text font */
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
-    /* Basic settings for main text font */
+
 }
 
 a {
+    /* Projects default settings for hyper-links */
     color: white;
     text-decoration: none;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
-    /* Projects default settings for hyper-links */
+
 }
 
 a:hover {
-    color: white;
     /* Same as previous except for hover settings */
-}
-
-/*............................................................  Logo */
-
-.img-logo {
-    margin: 0 auto;
-    padding-top: 30px;
-    display: block;
-    max-width: 100%;
-    height: auto;
-
-    /* alterations to the bootstrap class img-responsive*/
+    color: white;
 }
 
 /*............................................................  Containers */
 
 .opaque-overlay {
+    /* base code from whiskey drop module, altered to fit project*/
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-
-    /* base code from whiskey drop module, altered to fit project*/
-}
-
-.gig-opaque-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-
-    /* base code from whiskey drop module, altered to fit project*/
-}
-
-.content-container {
-    padding-top: 75px;
-    padding-bottom: 75px;
-    /* padding added to top and bottom of sections*/
 }
 
 .callout-container {
+    /* base code from whiskey drop module, altered to fit project*/
     height: 100vh;
-
     background-image: url('../images/collage.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -81,18 +56,17 @@ a:hover {
     align-items: center;
     width: 100%;
     position: relative;
-    /* base code from whiskey drop module, altered to fit project*/
 }
 
-.video-container {
-    background-image: url("../images/video-header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+.content-container {
+    /* padding added to top and bottom of sections*/
+    padding-top: 75px;
+    padding-bottom: 75px;
 
-    /* background image settings for video section */
 }
 
 .gigs-container {
+    /* background image settings */
     background-image: url("../images/live.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -103,17 +77,27 @@ a:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-
-    /* background image settings */
 }
 
-.social-container {
-    background-color: white;
-    /* background color setting */
+.gig-opaque-overlay {
+    /* base code from whiskey drop module, altered to fit project*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video-container {
+    /* background image settings for video section */
+    background-image: url("../images/video-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gallery-container {
+    /* background color setting */
     background-image: url("../images/monkees.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -124,112 +108,28 @@ a:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
 
+.social-container {
     /* background color setting */
-}
-
-/*............................................................  Block dividers */
-
-.block-divider {
-    width: 35px;
-    height: 5px;
-    border: 0;
-
-
-    /* block divider borrowed from whiskey drop module, sets divider dimensions relies on eother black or white versions for color */
-}
-
-.block-divider--white {
     background-color: white;
 }
 
-.block-divider--black {
-    background-color: black;
-}
+/*............................................................  Logo */
 
-/*............................................................  Buttons */
-
-.btn--cta {
-    font-weight: bold;
-    border-radius: 23px;
-    width: 160px;
-    background-color: #31b0d5;
-    color: white;
-
-    /* extra styles added to bootstrap button class */
-}
-
-
-/* ............................................................ Page Headers */
-
-.page-header {
-    margin-bottom: 0;
-    border-bottom: 0;
-    text-align: center;
-
-    /* extra styles added to bootstrap page-header class */
-}
-
-.page-header h2 {
-    margin-top: 0;
-
-    /* removed margin-top */
-}
-
-.band .page-header {
-    margin-bottom: 25px;
-
-    /* added 25 px of space at the bottom */
-}
-
-.music .page-header {
-    margin-bottom: 25px;
-
-    /* added 25 px of space at the bottom */
-}
-
-.video .page-header {
-    margin-bottom: 25px;
-
-    /* added 25 px of space at the bottom */
-}
-
-.gigs .page-header {
-    margin-bottom: 25px;
-
-    /* added 25 px of space at the bottom */
-}
-
-/*........................................................... Section Titles */
-
-.page-header .white-title {
-    color: white;
-
-    /* colors text white */
-}
-
-.text-title {
-    font-family: "Kalligraphia", sans-serif;
-
-    /* sets font for section titles */
-}
-
-.social-title {
-    color: black;
-    font-weight: 300;
-
-    /* basic font settings */
-}
-
-/*............................................................  Section Text */
-
-.section-text p {
-    text-align: center;
+.img-logo {
+    /* alterations to the bootstrap class img-responsive*/
+    margin: 0 auto;
+    padding-top: 30px;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*............................................................  Navbar Section */
 
 .navbar {
+    /* alterations made to Bootstraps navbar class for project specific navbar set up*/
     margin-bottom: 0;
     position: fixed;
     top: 0;
@@ -238,212 +138,297 @@ a:hover {
     z-index: 1;
     background-color: rgba(0, 0, 0, 1);
     border: 0;
-
-    /* alterations made to Bootstraps navbar class for project specific navbar set up */
 }
 
 .navbar-default .navbar-collapse {
+    /* removes border from expanded menu button in mobile version of navbar */
     border-color: black;
     width: 100%;
-
-    /* removes border from expanded menu button in mobile version of navbar */
 }
 
 .navbar-default .navbar-toggle:hover .navbar-default .navbar-toggle:visited .navbar-default .navbar-toggle:active .navbar-default .navbar-toggle:focus {
-    background-color: transparent;
-
     /* When expand menu button (mobile only)is selected its background colors remains transparent */
+    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
-
     /* colors the bars in the expand menu button to white */
+    background-color: white;
 }
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
-    color: white;
-
     /* when a link item is interacted with it remains white */
+    color: white;
 }
 
 .navbar-default .navbar-nav>li>a {
+    /* basic settings for link items */
     color: white;
     font-size: 20px;
-
-    /* basic settings for link items */
 }
 
 .navbar a {
-    font-family: "Kalligraphia", sans-serif;
-
     /* sets font type for link items in mobile nav */
+    font-family: "Kalligraphia", sans-serif;
 }
 
 .navbar-brand {
+    /*alterations made to Bootstraps navbar-brand class for project specific navbar set up on mobile */
     font-size: 25px;
     padding-top: 18px;
-
-    /*alterations made to Bootstraps navbar-brand class for project specific navbar set up on mobile */
 }
 
 .navbar-default .navbar-toggle:hover {
+    /*Sets background color to transparent*/
     background-color: transparent;
 }
 
 /*............................................................  Jumbotron Section */
 
 .jumbotron {
+    /* alterations made to bootstraps jumbotron class */
     background-color: transparent;
     margin-bottom: 0;
-
-    /* alterations made to bootstraps jumbotron class */
 }
 
 .lead.music-service {
+    /* font settings for the music service links in jumbotron */
     font-size: 18px;
     padding-left: 10px;
     padding-right: 10px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     color: white;
-
-    /* font settings for the music service links in jumbotron */
 }
 
 .lead.music-service:hover {
+    /* font settings for the music service links in jumbotron upon hover */
     color: white;
     text-decoration: underline;
-
-    /* font settings for the music service links in jumbotron upon hover */
 }
 
 .lead.music-text {
+    /* settings for the new album details in jumbotron */
     font-style: italic;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: white;
     margin: 25px 0;
-
-    /* settings for the new album details in jumbotron */
 }
 
+/*............................................................  Block dividers */
+
+.block-divider {
+    /* block divider borrowed from whiskey drop module, sets divider dimensions relies on either black or white versions for color */
+    width: 35px;
+    height: 5px;
+    border: 0;
+}
+
+.block-divider--white {
+    /*Sets background color */
+    background-color: white;
+}
+
+.block-divider--black {
+    /*Sets background color */
+    background-color: black;
+}
+
+/*........................................................... Section Titles */
+
+.page-header .white-title {
+    /* colors text white */
+    color: white;
+}
+
+.text-title {
+    /* sets font for section titles */
+    font-family: "Kalligraphia", sans-serif;
+}
+
+.social-title {
+    /* basic font settings */
+    color: black;
+    font-weight: 300;
+}
+
+/* ............................................................ Page Headers */
+
+.page-header {
+    /* extra styles added to bootstrap page-header class */
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    /* removed margin-top */
+    margin-top: 0;
+}
+
+.band .page-header {
+    /* added 25 px of space at the bottom */
+    margin-bottom: 25px;
+}
+
+.gigs .page-header {
+    /* added 25 px of space at the bottom */
+    margin-bottom: 25px;
+}
+
+.music .page-header {
+    /* added 25 px of space at the bottom */
+    margin-bottom: 25px;
+}
+
+.video .page-header {
+    /* added 25 px of space at the bottom */
+    margin-bottom: 25px;
+}
+
+/*............................................................  Section Text */
+
+.section-text p {
+    /* aligns text in center */
+    text-align: center;
+}
 
 /*............................................................ Band Section */
 
 blockquote {
-    border-left: 0;
-
     /* removes border on the left */
+    border-left: 0;
 }
 
 .media-body {
-    padding-bottom: 25px;
-
     /* puts 25px of space at the bottom */
+    padding-bottom: 25px;
 }
 
 .media-body p {
-    font-size: 14px;
-
     /* sets font size */
+    font-size: 14px;
 }
 
 /*............................................................  Gigs Section */
 
 .gigs-text {
-    color: white;
     /* sets color of text to white */
+    color: white;
 }
 
 body table {
-    color: white;
     /* sets color of text inside table to white */
-}
-
-td {
-    position: relative;
-    padding: 5px 10px;
-
-    /* controls position of strikethrough */
-}
-
-tr.strikeout td:before {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    /* sets it in the middle of the line */
-    border-bottom: 1px solid white;
-    width: 150%;
-    /* joins strike-through bar sections together */
-    /* styles strike through */
+    color: white;
 }
 
 .dead-link {
+    /* styles sold out! to look like the other live links */
     color: white;
     text-decoration: none;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
-
-    /* styles struck through buy tickets to looks like the other live links */
 }
 
+/*............................................................  Buttons */
+
+.btn--cta {
+    /* extra styles added to bootstrap button class */
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+    background-color: #31b0d5;
+    color: white;
+}
+
+/* ........................................................ Booking Modal */
+
+.modal {
+    /* To center vertically */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/*........................................................ Music Section */
+
+p .section-text {
+    /* centers text sets width */
+    text-align: center;
+    width: 30em;
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+/*......................................................... Gallery Section */
+
+.gallery-img {
+    /*For uniform sizing */
+    display: block;
+    max-width: 100%;
+    height: 400px !important;
+
+
+}
+
+#gallery-text {
+    /* colors text white */
+    color: white;
+}
 /*............................................................ Video Section*/
 
 #video-text {
-    color: white;
-
     /* colors text white */
+    color: white;
 }
 
 video {
+    /* makes video centered and responsive */
     height: auto !important;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: block
-    /* makes video centered and responsive */
 }
-
 
 /*............................................................ Social Footer */
 
 .lead.social-text {
+    /* basic font settings */
     font-family: "Kalligraphia", sans-serif;
     font-size: 35px;
     color: white;
     text-decoration: underline;
-
-    /* basic font settings */
 }
 
 .social-list {
+    /* basic font settings, positioning and removal of style, margin and padding from list */
     font-size: 45px;
     font-weight: 400;
     margin: 0px;
     padding: 0;
     list-style: none;
     text-align: center;
-
-    /* basic font settings, positioning and removal of style, margin and padding from list */
 }
 
 .social-list li {
+    /* displays list horizontally instead of vertically */
     display: inline-block;
     margin: 0 10px;
-
-    /* displays list horizontally instead of vertically */
 }
 
 .fa {
-    color: black;
-
     /* colors font awesome social icons black */
+    color: black;
 }
 
 #signup.contact-form {
+    /* styles newsletter subscription */
     display: block;
     font-size: 14px;
     margin-top: 0em;
@@ -451,87 +436,34 @@ video {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     padding-top: 25px;
-
-    /* styles newsletter subscription */
 }
 
 #back {
+    /* styles back to top link */
     color: black;
     text-decoration: underline;
-
-    /* styles back to top link */
 }
 
 input .email-box {
+    /* sets border color */
     border-color: black;
 }
 
 /*......................................................... Media Queries */
 
 @media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
 
-        /* displays navbar horizontally on larger screens */
+    /*............................................................  General */
+    
+    body {
+        /*adds padding for fixed navbar*/
+        padding-top: 60px;
     }
 
-    .navbar .navbar-collapse {
-        text-align: center;
-
-        /* aligns navbar items in the center */
-    }
-    .navbar-nav>li {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-
-        /* styles navbar items spacing*/
-    }
-
-    .navbar {
-        background-color: rgba(0, 0, 0, 0.);
-
-        /* removes background color */
-    }
-    .navbar-default .navbar-nav>li>a {
-        transition: text-decoration 0.5s ease-in-out;
-        font-size: 35px;
-        font-family: "Kalligraphia", sans-serif;
-        color: white;
-
-        /* font styles and transition settings for navbar items*/
-    }
-    .navbar-default .navbar-nav>li>a:hover,
-    .navbar-default .navbar-nav>li>a:active {
-        text-decoration: underline;
-
-        /* when navbar items are interacted with they are underlined */
-    }
-    .lead.music-text {
-        font-style: italic;
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        font-weight: 300;
-        font-size: 25px;
-        color: white;
-        margin: 25px 0;
-
-        /* Basic font settings */
-    }
-
-    .img-responsive {
-        padding-top: 90px;
-
-        /* controls monkees logo img size */
-    }
-
-    video {
-        width: 60%;
-
-    }
-
+    /*............................................................  Containers */
+    
     .callout-container {
+        /* base code from whiskey drop module, altered to fit project*/
         height: 100vh;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -541,47 +473,72 @@ input .email-box {
         align-items: center;
         justify-content: center;
         position: relative;
-
-        /* base code from whiskey drop module, altered to fit project*/
-    }
-    body {
-        padding-top: 60px;
     }
 
-}
-
-/* ........................................................ Modal */
-
-.modal {
+    /*............................................................  Logo */
     
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+    .img-responsive {
+        /* controls monkees logo img size */
+        padding-top: 90px;
+
+
+    }
+
+    /*............................................................  Navbar Section */
     
-    /* To center vertically */
+    .navbar .navbar-nav {
+        /*navbar display settings*/
+        display: inline-block;
+        float: none;
+        vertical-align: top
+    }
 
-}
+    .navbar .navbar-collapse {
+        /* aligns navbar items in the center */
+        text-align: center;
+    }
 
+    .navbar-nav>li {
+        /* styles navbar items spacing*/
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
 
+    .navbar {
+        /* removes background color */
+        background-color: rgba(0, 0, 0, 0.);
+    }
+    .navbar-default .navbar-nav>li>a {
+        /* font styles and transition settings for navbar items*/
+        transition: text-decoration 0.5s ease-in-out;
+        font-size: 35px;
+        font-family: "Kalligraphia", sans-serif;
+        color: white;
+    }
 
-/*........................................................ Music */
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>li>a:active {
+        /* when navbar items are interacted with they are underlined */
+        text-decoration: underline;
+    }
 
-
-.section-text {
-    text-align: center;
+    /*............................................................  Jumbotron Section*/
     
-    /* centers text */
+    .lead.music-text {
+        /* Basic font settings */
+        font-style: italic;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+        color: white;
+        margin: 25px 0;
+    }
 
-}
+    /*............................................................  Video Section */
+    video {
+        /*sets video width*/
+        width: 60%;
 
-/*......................................................... Gallery */
-
-.gallery-img {
-    display: block;
-    max-width: 100%;
-    height: 400px !important;
-    
-    /*For uniform sizing */
+    }
 }
