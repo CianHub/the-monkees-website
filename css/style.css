@@ -380,6 +380,7 @@ p .section-text {
     /* colors text white */
     color: white;
 }
+
 /*............................................................ Video Section*/
 
 #video-text {
@@ -454,14 +455,12 @@ input .email-box {
 @media (min-width: 768px) {
 
     /*............................................................  General */
-    
     body {
         /*adds padding for fixed navbar*/
         padding-top: 60px;
     }
 
     /*............................................................  Containers */
-    
     .callout-container {
         /* base code from whiskey drop module, altered to fit project*/
         height: 100vh;
@@ -476,7 +475,6 @@ input .email-box {
     }
 
     /*............................................................  Logo */
-    
     .img-responsive {
         /* controls monkees logo img size */
         padding-top: 90px;
@@ -485,7 +483,6 @@ input .email-box {
     }
 
     /*............................................................  Navbar Section */
-    
     .navbar .navbar-nav {
         /*navbar display settings*/
         display: inline-block;
@@ -524,7 +521,6 @@ input .email-box {
     }
 
     /*............................................................  Jumbotron Section*/
-    
     .lead.music-text {
         /* Basic font settings */
         font-style: italic;
