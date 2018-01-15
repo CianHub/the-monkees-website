@@ -16,14 +16,14 @@
         <!--navbar-->
         <div class="container-fluid">
             <div class="navbar-header">
-                 <div id="mobile-nav" class="navbar-brand visible-xs active"><a href="index.html">The Monkees</a></div>
-                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <div id="mobile-nav" class="navbar-brand visible-xs active"><a href="index.html">The Monkees</a></div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
                      <span class="sr-only">Toggle navigation</span>
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                  </button>
-             </div>
+            </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="#band">Band</a></li>
@@ -161,10 +161,12 @@
                                     </thead>
                                     <tbody class="text-center">
                                         <tr class=" visible-sm visible-md visible-lg">
-                                            <td>28/12/17</td>
-                                            <td>Brooklyn, New York</td>
-                                            <td> Beacon Theatre</td>
-                                            <td class="dead-link"> Sold Out!</td>
+                                            <td class="soldout">28/12/17</td>
+                                            <td class="soldout">Brooklyn, New York</td>
+                                            <td class="soldout"> Beacon Theatre</td>
+                                            <td class="dead-link soldout">
+                                                <h4><span class="label label-danger">Sold Out! </span></h4>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>04/05/18</td>
@@ -439,16 +441,17 @@
                             <p class="help-block">* Required</p>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-success">Submit Booking</button></div> <br>
+                            <input class="btn btn-success" type="submit" name="btnADD" id="btnADD" value="Submit Booking" onclick="disableButton(this)"/>
+                        </div> <br>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+
     <script>
         // Open the Modal
         function openModal() {
@@ -489,6 +492,14 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
             captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <script>
+        function disableButton(button) {
+            button.disabled = true;
+            button.value = "Booking Sent"
+            alert("Booking Sent");
+            button.form.submit();
         }
     </script>
 </body>

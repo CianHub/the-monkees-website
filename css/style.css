@@ -8,16 +8,20 @@
 
 }
 
+/* Basic settings for main text font */
+
 body {
 
-    /* Basic settings for main text font */
+
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
 
 }
 
+/* Projects default settings for hyper-links */
+
 a {
-    /* Projects default settings for hyper-links */
+
     color: white;
     text-decoration: none;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -25,15 +29,18 @@ a {
 
 }
 
+/* Same as previous except for hover settings */
+
 a:hover {
-    /* Same as previous except for hover settings */
+
     color: white;
 }
 
 /*............................................................  Containers */
 
+/* base code from whiskey drop module, altered to fit project*/
+
 .opaque-overlay {
-    /* base code from whiskey drop module, altered to fit project*/
     position: absolute;
     top: 0;
     left: 0;
@@ -42,8 +49,9 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+/* base code from whiskey drop module, altered to fit project*/
+
 .callout-container {
-    /* base code from whiskey drop module, altered to fit project*/
     height: 100vh;
     background-image: url('../images/collage.jpg');
     -webkit-background-size: cover;
@@ -58,15 +66,17 @@ a:hover {
     position: relative;
 }
 
+/* padding added to top and bottom of sections*/
+
 .content-container {
-    /* padding added to top and bottom of sections*/
     padding-top: 75px;
     padding-bottom: 75px;
 
 }
 
+/* background image settings */
+
 .gigs-container {
-    /* background image settings */
     background-image: url("../images/live.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -79,8 +89,9 @@ a:hover {
     background-attachment: fixed;
 }
 
+/* base code from whiskey drop module, altered to fit project*/
+
 .gig-opaque-overlay {
-    /* base code from whiskey drop module, altered to fit project*/
     position: absolute;
     top: 0;
     left: 0;
@@ -89,15 +100,17 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* background image settings for video section */
+
 .video-container {
-    /* background image settings for video section */
     background-image: url("../images/video-header.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* background color setting */
+
 .gallery-container {
-    /* background color setting */
     background-image: url("../images/monkees.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -110,15 +123,17 @@ a:hover {
     background-attachment: fixed;
 }
 
+/* background color setting */
+
 .social-container {
-    /* background color setting */
     background-color: white;
 }
 
 /*............................................................  Logo */
 
+/* alterations to the bootstrap class img-responsive*/
+
 .img-logo {
-    /* alterations to the bootstrap class img-responsive*/
     margin: 0 auto;
     padding-top: 30px;
     display: block;
@@ -128,8 +143,9 @@ a:hover {
 
 /*............................................................  Navbar Section */
 
+/* alterations made to Bootstraps navbar class for project specific navbar set up*/
+
 .navbar {
-    /* alterations made to Bootstraps navbar class for project specific navbar set up*/
     margin-bottom: 0;
     position: fixed;
     top: 0;
@@ -140,60 +156,71 @@ a:hover {
     border: 0;
 }
 
+/* removes border from expanded menu button in mobile version of navbar */
+
 .navbar-default .navbar-collapse {
-    /* removes border from expanded menu button in mobile version of navbar */
+
     border-color: black;
     width: 100%;
 }
 
+/* When expand menu button (mobile only)is selected its background colors remains transparent */
+
 .navbar-default .navbar-toggle:hover .navbar-default .navbar-toggle:visited .navbar-default .navbar-toggle:active .navbar-default .navbar-toggle:focus {
-    /* When expand menu button (mobile only)is selected its background colors remains transparent */
     background-color: transparent;
 }
 
+/* colors the bars in the expand menu button to white */
+
 .navbar-default .navbar-toggle .icon-bar {
-    /* colors the bars in the expand menu button to white */
     background-color: white;
 }
 
+/* when a link item is interacted with it remains white */
+
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
-    /* when a link item is interacted with it remains white */
     color: white;
 }
 
+/* basic settings for link items */
+
 .navbar-default .navbar-nav>li>a {
-    /* basic settings for link items */
     color: white;
     font-size: 20px;
 }
 
+/* sets font type for link items in mobile nav */
+
 .navbar a {
-    /* sets font type for link items in mobile nav */
     font-family: "Kalligraphia", sans-serif;
 }
 
+/*alterations made to Bootstraps navbar-brand class for project specific navbar set up on mobile */
+
 .navbar-brand {
-    /*alterations made to Bootstraps navbar-brand class for project specific navbar set up on mobile */
     font-size: 25px;
     padding-top: 18px;
 }
 
+/*Sets background color to transparent*/
+
 .navbar-default .navbar-toggle:hover {
-    /*Sets background color to transparent*/
     background-color: transparent;
 }
 
 /*............................................................  Jumbotron Section */
 
+/* alterations made to bootstraps jumbotron class */
+
 .jumbotron {
-    /* alterations made to bootstraps jumbotron class */
     background-color: transparent;
     margin-bottom: 0;
 }
 
+/* font settings for the music service links in jumbotron */
+
 .lead.music-service {
-    /* font settings for the music service links in jumbotron */
     font-size: 18px;
     padding-left: 10px;
     padding-right: 10px;
@@ -202,14 +229,16 @@ a:hover {
     color: white;
 }
 
+/* font settings for the music service links in jumbotron upon hover */
+
 .lead.music-service:hover {
-    /* font settings for the music service links in jumbotron upon hover */
     color: white;
     text-decoration: underline;
 }
 
+/* settings for the new album details in jumbotron */
+
 .lead.music-text {
-    /* settings for the new album details in jumbotron */
     font-style: italic;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
@@ -220,123 +249,158 @@ a:hover {
 
 /*............................................................  Block dividers */
 
+/* block divider borrowed from whiskey drop module, sets divider dimensions relies on either black or white versions for color */
+
 .block-divider {
-    /* block divider borrowed from whiskey drop module, sets divider dimensions relies on either black or white versions for color */
     width: 35px;
     height: 5px;
     border: 0;
 }
 
+/*Sets background color */
+
 .block-divider--white {
-    /*Sets background color */
     background-color: white;
 }
 
+/*Sets background color */
+
 .block-divider--black {
-    /*Sets background color */
     background-color: black;
 }
 
 /*........................................................... Section Titles */
 
+/* colors text white */
+
 .page-header .white-title {
-    /* colors text white */
     color: white;
 }
 
+/* sets font for section titles */
+
 .text-title {
-    /* sets font for section titles */
     font-family: "Kalligraphia", sans-serif;
 }
 
+/* basic font settings */
+
 .social-title {
-    /* basic font settings */
     color: black;
     font-weight: 300;
 }
 
 /* ............................................................ Page Headers */
 
+/* extra styles added to bootstrap page-header class */
+
 .page-header {
-    /* extra styles added to bootstrap page-header class */
     margin-bottom: 0;
     border-bottom: 0;
     text-align: center;
 }
 
+/* removed margin-top */
+
 .page-header h2 {
-    /* removed margin-top */
     margin-top: 0;
 }
 
+/* added 25 px of space at the bottom */
+
 .band .page-header {
-    /* added 25 px of space at the bottom */
     margin-bottom: 25px;
 }
+
+/* added 25 px of space at the bottom */
 
 .gigs .page-header {
-    /* added 25 px of space at the bottom */
     margin-bottom: 25px;
 }
+
+/* added 25 px of space at the bottom */
 
 .music .page-header {
-    /* added 25 px of space at the bottom */
     margin-bottom: 25px;
 }
 
+/* added 25 px of space at the bottom */
+
 .video .page-header {
-    /* added 25 px of space at the bottom */
     margin-bottom: 25px;
 }
 
 /*............................................................  Section Text */
 
+/* aligns text in center */
+
 .section-text p {
-    /* aligns text in center */
     text-align: center;
 }
 
 /*............................................................ Band Section */
 
+/* removes border on the left */
+
 blockquote {
-    /* removes border on the left */
     border-left: 0;
 }
 
+/* puts 25px of space at the bottom */
+
 .media-body {
-    /* puts 25px of space at the bottom */
     padding-bottom: 25px;
 }
 
+/* sets font size */
+
 .media-body p {
-    /* sets font size */
     font-size: 14px;
 }
 
 /*............................................................  Gigs Section */
 
+/* sets color of text to white */
+
 .gigs-text {
-    /* sets color of text to white */
     color: white;
 }
+
+/* sets color of text inside table to white */
 
 body table {
-    /* sets color of text inside table to white */
     color: white;
 }
 
+/* styles sold out! to look like the other live links */
+
 .dead-link {
-    /* styles sold out! to look like the other live links */
     color: white;
     text-decoration: none;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
 }
 
+.label {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    
+    
+}
+
+/* top line of gigs table positioning */ 
+
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
 /*............................................................  Buttons */
 
+/* extra styles added to bootstrap button class */
+
 .btn--cta {
-    /* extra styles added to bootstrap button class */
     font-weight: bold;
     border-radius: 23px;
     width: 160px;
@@ -346,8 +410,9 @@ body table {
 
 /* ........................................................ Booking Modal */
 
+/* To center vertically */
+
 .modal {
-    /* To center vertically */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -357,8 +422,9 @@ body table {
 
 /*........................................................ Music Section */
 
+/* centers text sets width */
+
 p .section-text {
-    /* centers text sets width */
     text-align: center;
     width: 30em;
     padding-left: 50%;
@@ -367,8 +433,9 @@ p .section-text {
 
 /*......................................................... Gallery Section */
 
+/*For uniform sizing */
+
 .gallery-img {
-    /*For uniform sizing */
     display: block;
     max-width: 100%;
     height: 400px !important;
@@ -376,20 +443,23 @@ p .section-text {
 
 }
 
+/* colors text white */
+
 #gallery-text {
-    /* colors text white */
     color: white;
 }
 
 /*............................................................ Video Section*/
 
+/* colors text white */
+
 #video-text {
-    /* colors text white */
     color: white;
 }
 
+/* makes video centered and responsive */
+
 video {
-    /* makes video centered and responsive */
     height: auto !important;
     width: 80%;
     margin-left: auto;
@@ -399,16 +469,18 @@ video {
 
 /*............................................................ Social Footer */
 
+/* basic font settings */
+
 .lead.social-text {
-    /* basic font settings */
     font-family: "Kalligraphia", sans-serif;
     font-size: 35px;
     color: white;
     text-decoration: underline;
 }
 
+/* basic font settings, positioning and removal of style, margin and padding from list */
+
 .social-list {
-    /* basic font settings, positioning and removal of style, margin and padding from list */
     font-size: 45px;
     font-weight: 400;
     margin: 0px;
@@ -417,19 +489,22 @@ video {
     text-align: center;
 }
 
+/* displays list horizontally instead of vertically */
+
 .social-list li {
-    /* displays list horizontally instead of vertically */
     display: inline-block;
     margin: 0 10px;
 }
 
+/* colors font awesome social icons black */
+
 .fa {
-    /* colors font awesome social icons black */
     color: black;
 }
 
+/* styles newsletter subscription */
+
 #signup.contact-form {
-    /* styles newsletter subscription */
     display: block;
     font-size: 14px;
     margin-top: 0em;
@@ -439,30 +514,36 @@ video {
     padding-top: 25px;
 }
 
+/* styles back to top link */
+
 #back {
-    /* styles back to top link */
     color: black;
     text-decoration: underline;
 }
 
+/* sets border color */
+
 input .email-box {
-    /* sets border color */
     border-color: black;
 }
 
-/*......................................................... Media Queries */
+/*......................................................... MEDIA QUERIES */
 
 @media (min-width: 768px) {
 
     /*............................................................  General */
+    
+    /*adds padding for fixed navbar*/
+    
     body {
-        /*adds padding for fixed navbar*/
         padding-top: 60px;
     }
 
     /*............................................................  Containers */
+    
+    /* base code from whiskey drop module, altered to fit project*/
+    
     .callout-container {
-        /* base code from whiskey drop module, altered to fit project*/
         height: 100vh;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -475,54 +556,66 @@ input .email-box {
     }
 
     /*............................................................  Logo */
+    
+    /* controls monkees logo img size */
+    
     .img-responsive {
-        /* controls monkees logo img size */
         padding-top: 90px;
 
 
     }
 
     /*............................................................  Navbar Section */
+    
+    /*navbar display settings*/
+    
     .navbar .navbar-nav {
-        /*navbar display settings*/
         display: inline-block;
         float: none;
         vertical-align: top
     }
-
+    
+    /* aligns navbar items in the center */
+    
     .navbar .navbar-collapse {
-        /* aligns navbar items in the center */
         text-align: center;
     }
-
+    
+    /* styles navbar items spacing*/
+    
     .navbar-nav>li {
-        /* styles navbar items spacing*/
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 10px;
     }
-
+    
+    /* removes background color */
+    
     .navbar {
-        /* removes background color */
         background-color: rgba(0, 0, 0, 0.);
     }
+    
+    /* font styles and transition settings for navbar items*/
+    
     .navbar-default .navbar-nav>li>a {
-        /* font styles and transition settings for navbar items*/
         transition: text-decoration 0.5s ease-in-out;
         font-size: 35px;
         font-family: "Kalligraphia", sans-serif;
         color: white;
     }
-
+    
+    /* when navbar items are interacted with they are underlined */
+    
     .navbar-default .navbar-nav>li>a:hover,
     .navbar-default .navbar-nav>li>a:active {
-        /* when navbar items are interacted with they are underlined */
         text-decoration: underline;
     }
 
     /*............................................................  Jumbotron Section*/
+    
+    /* Basic font settings */
+    
     .lead.music-text {
-        /* Basic font settings */
         font-style: italic;
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         font-weight: 300;
@@ -532,8 +625,10 @@ input .email-box {
     }
 
     /*............................................................  Video Section */
+    
+    /*sets video width*/
+    
     video {
-        /*sets video width*/
         width: 60%;
 
     }
