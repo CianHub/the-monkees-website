@@ -1,22 +1,47 @@
-# Code Institute User Centric Front-End Development Project
+# The Monkees Website
 
-## Project Overview and Functionality
+This website offers both existing and potential fans of The Monkees a way to see and hear songs from the bands back catalog and find out about any new material as it becomes available. The site provides information and links to buy tickets for the bands upcoming concerts as well as a method of booking the band for private events. Fans can learn about the individual members of The Monkees through the band section and provides links to the bands social media and a newsletter sign-up option.
 
-The goal of this project is to offer a website where both existing and potential members of The Monkees' fanbase can see and hear songs from their back catalog and also be directed towards any new material as it becomes available through information and purchase links. The site provides information and links to buy tickets for the bands upcoming gigs as well as a method of booking the band for private events. Fans can learn about the individual members of The Monkees through the band section which contains a picture of each member accompanied by a quote and their role in the band. Finally, the site will also provide links to the band's social media and a newsletter sign-up option.
+## Features
+
+1. Users can watch music videos.
+2. Users can listen to existing songs.
+3, Users can find information about upcoming releases.
+4. Users can find information and links to purchase tickets for upcoming concerts.
+5. Users can book the band for private events.
+6. Users can find information about each member of The Monkees.
+7. Users can find links to the bands social media and sign up for a newsletter.
+8. Users can view a gallery containing images related to The Monkees (e.g. album covers).
 
 ## Technology Used
 
-The project is primarily built using HTML5 and CSS3. Within these two main pillars, the various parts of the Bootstrap framework were utilised as a base and customised to be project specific. The website consists of 7 main sections: the navbar/jumbotron section, band section, gigs section, booking form/modal section, music section, video section, and the social footer section. This layout uses the Bootstrap grid system and each section was built using a wrapper - container - row - column structural foundation. The background of the navbar/jumbotron section makes use of flexbox to display its background image. The website is structured as semantically as possible based on this structure as per best practices. The site has been tested extensively and is fully responsive across all screen sizes and browsers, although the calendar selector tool in the modal section is only available in Chrome and Edge. As the development followed a mobile-first approach, the core elements (minimal viable product) of the site are present on all screens while there is more detail present in various areas like the navbar and gigs table on larger screens.
+This application was developed using HTML5, CSS3, Bootstrap 3 and minimal JavaScript.
 
-## Project Deployment and Testing
+## Design
 
-The project was tested on a section by section basis upon their respective completion. Initial versions of the site experimented with different approaches for example in an early version of the site a more visually interesting jQuery music player was trialled but unfortunately as I do not yet have a working knowledge of JQuery, as a result customising the player proved to be difficult and I instead opted to stick to the HTML5 audio elements. Similarly in the mock-ups for the site, I envisioned a left-sided vertical navbar as in my research I had chosen the Nine Inch Nails (nin.com) website as a model, although during development the project direction ultimately shifted in a different direction. A section which required a lot of testing was the navbar as I wanted it to display differently depending on the screen size. I experimented with using the bootstrap slideshow component for the band section but ultimately opted for the final version as a result of the image assets varying in size and displaying poorly in the format. I had an idea of trying to frame the video in a tv border using a background image but this would have involved dividing the tv image into four separate slices in order to order to for it to be responsive and I couldn't manage to find an appropriate frame.
+The Bootstrap framework serves as the base for the sites design. The website uses a single page layout consisting of seven main sections: the navbar/jumbotron section, band section, gigs section, booking form/modal section, music section, video section, and the social footer section. This layout uses the Bootstrap grid system and each section was built using a wrapper - container - row - column structure. The background of the navbar/jumbotron section makes use of flexbox to display its background image.
 
-Following the advice from the mentors in the User-Centric Front-End Development module, "a smart coder is a lazy coder" where possible I tried to use existing code as a base and build upon it to make it project specific. In particular, I found parts of the Whiskey Drop site from the lessons particularly useful and easy to adjust for my project. For example, the opaque overlay was already a perfect fit for what the project needed and straightforward to integrate, whereas I was able to manipulate the initial code I used from Whiskey Drop to create background image effect in the navbar/jumbotron section. Another very useful source for code was the bootstrap framework. I made extensive use of customised versions of bootstrap classes through the entire project, particularly in the navbar/jumbotron section and gigs section (all borrowed/adjusted code is referenced in more detail in the CSS file).
+The website is structured semantically with a mobile-first philosophy. Keeping with this approach, the core elements (minimal viable product) of the site are present on all screens while there is more detail present in various areas like the navbar and gigs table on larger screens.
 
-The final code has been deployed to Github pages as it made the most sense due to the platform being used to store the repository.
+As The Monkees have been around and long established their brand, the sites colors and typography draw on the existing aesthetic and color scheme in order to instantly identify the site with the band.
+
+
+## Development Process 
+
+During the development of the site different elements were experimented with e.g. in an early version of the site a jQuery based music player was trialled but due to my lack of experience with JQuery at the time of development, customising the player was very challenging and I opted to work with the HTML5 audio elements instead. 
+
+Similiarly as the images I had been provided with were in a variety of different sizes and displayed quite poorly. This led to some tinkering with different methods of displaying the images until finally settling on a customised version of the Bootstrap slideshow component which allows for a consistent presentation.
 
 ## Installation
 
-The website can be installed on a local computer by cloning and downloading the repository and opening the index.html file with the appropriate software.
+1. Clone the repository.
+2. Open index.html in your web browser of choice.
 
+## Testing
+
+As it primarily consists of HTML an CSS, the site has been manually tested on a section by section basis and is fully responsive across all screen sizes and browsers (the calendar selector tool in the modal section is only available in Chrome and Edge as of the time of development). 
+
+
+## Deployment
+
+The website has been deployed to Github pages and can be found at: <https://cianhub.github.io/the-monkees-website/>
