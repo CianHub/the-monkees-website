@@ -592,7 +592,7 @@ input .email-box {
     /* removes background color */
     
     .navbar {
-        background-color: rgba(0, 0, 0, 0.);
+        background-color: rgba(0, 0, 0, 0);
     }
     
     /* font styles and transition settings for navbar items*/
