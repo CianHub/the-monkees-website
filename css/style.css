@@ -531,14 +531,6 @@ input .email-box {
 
 @media (min-width: 768px) {
 
-    /*............................................................  General */
-    
-    /*adds padding for fixed navbar*/
-    
-    body {
-        padding-top: 60px;
-    }
-
     /*............................................................  Containers */
     
     /* base code from whiskey drop module, altered to fit project*/
