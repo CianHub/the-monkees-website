@@ -152,7 +152,7 @@ a:hover {
     left: 0;
     width: 100%;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, .5);
     border: 0;
 }
 
@@ -566,6 +566,14 @@ input .email-box {
     }
 
     /*............................................................  Navbar Section */
+    
+    /*Changes navbar display type*/
+    
+    .navbar {
+        margin-bottom: 0;
+        position: absolute;
+        
+    }
     
     /*navbar display settings*/
     
